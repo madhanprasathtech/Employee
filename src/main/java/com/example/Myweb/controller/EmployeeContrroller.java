@@ -56,4 +56,9 @@ public class EmployeeContrroller {
 	public String getpatch(@PathVariable int a,@RequestBody EmployeeEntity name) {
 		return es.getpatchs(a,name);
 	}
+	
+	@GetMapping("/getall")
+	public List<EmployeeEntity> gets(){
+		return es.getEmpSre();
+	}
 }

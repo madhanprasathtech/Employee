@@ -44,4 +44,9 @@ public class EmployeeService {
 	public String getpatchs(@PathVariable int a,@RequestBody EmployeeEntity name) {
 		return ed.getpatchse(a,name);
 	}
+
+	public List<EmployeeEntity> getEmpSre() {
+		
+		return ed.getEmpSre();
+	}
 }

@@ -55,4 +55,9 @@ public class EmployeeDao {
 		return "updated successfully";
 	}
 
+	public List<EmployeeEntity> getEmpSre() {
+		
+		return er.findAll();
+	}
+
 }
